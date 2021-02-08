@@ -17,6 +17,10 @@ const routes: Routes = [
 
 children:[ 
 {
+  path: '', 
+  loadChildren: () => import('./layout/dashboard/dashboard.module').then(m => m.DashboardModule)
+},
+{
   path: 'add-donor', 
   loadChildren: () => import('./components/blood-donor/add-donor/add-donor.module').then(m => m.AddDonorModule)
 },

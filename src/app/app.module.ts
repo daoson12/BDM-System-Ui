@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './layout/home/home.component';
-import { DashboardComponent } from './layout/dashboard/dashboard.component';
+
 import { FooterComponent } from './layout/footer/footer.component';
 import { NavBarComponent } from './layout/nav-bar/nav-bar.component';
 import { SideBarComponent } from './layout/side-bar/side-bar.component';
@@ -21,7 +21,7 @@ import { EditCampaignerComponent } from './components/blood-campaigner/edit-camp
   declarations: [
     AppComponent,
     HomeComponent,
-    DashboardComponent,
+
     FooterComponent,
     NavBarComponent,
     SideBarComponent,
