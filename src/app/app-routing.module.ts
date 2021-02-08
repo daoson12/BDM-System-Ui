@@ -13,7 +13,36 @@ const routes: Routes = [
 {path:'login-user', component:LoginUserComponent},
 {path:'login-admin', component:LoginAdminComponent},
 {path:'sign-up', component:SignUpComponent},
-{path:'home', component:HomeComponent}
+{path:'home', component:HomeComponent,
+
+children:[ 
+{
+  path: 'add-donor', 
+  loadChildren: () => import('./components/blood-donor/add-donor/add-donor.module').then(m => m.AddDonorModule)
+},
+{
+  path: 'donor', 
+  loadChildren: () => import('./components/blood-donor/donors/donors.module').then(m => m.DonorsModule)
+},
+{
+  path: 'add-requester', 
+  loadChildren: () => import('./components/blood-requester/add-requester/add-requester.module').then(m => m.AddRequesterModule)
+},
+
+{
+  path: 'requester', 
+  loadChildren: () => import('./components/blood-requester/requester/requester.module').then(m => m.RequesterModule)
+},
+{
+  path: 'add-campaigner', 
+  loadChildren: () => import('./components/blood-campaigner/add-campaigner/add-campaigner.module').then(m => m.AddCampaignerModule)
+},
+{
+  path: 'campaigner', 
+  loadChildren: () => import('./components/blood-campaigner/campaigner/campaigner.module').then(m => m.CampaignerModule)
+},
+]
+}
 ];
 
 @NgModule({

@@ -12,6 +12,10 @@ import { LandingPageComponent } from './layout/landing-page/landing-page.compone
 import { LoginUserComponent } from './security/login-user/login-user.component';
 import { LoginAdminComponent } from './security/login-admin/login-admin.component';
 import { SignUpComponent } from './security/sign-up/sign-up.component';
+import { EditDonorComponent } from './components/blood-donor/edit-donor/edit-donor.component';
+import { EditRequesterComponent } from './components/blood-requester/edit-requester/edit-requester.component';
+import { EditCampaignerComponent } from './components/blood-campaigner/edit-campaigner/edit-campaigner.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { SignUpComponent } from './security/sign-up/sign-up.component';
     LandingPageComponent,
     LoginUserComponent,
     LoginAdminComponent,
-    SignUpComponent
+    SignUpComponent,
+    EditDonorComponent,
+    EditRequesterComponent,
+   
+    EditCampaignerComponent,
   ],
   imports: [
     BrowserModule,
