@@ -17,6 +17,10 @@ export class LoginAdminComponent implements OnInit {
     this.router.navigate(['sign-up'])
   }
 
+  gotoLogin(){
+    this.router.navigate(['sign-up'])
+  }
+
   onSubmit(){
     this.router.navigate(['home'])
   }
