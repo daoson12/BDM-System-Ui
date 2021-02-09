@@ -10,19 +10,20 @@ export class LoginAdminComponent implements OnInit {
 
   constructor( private router:Router) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
   }
 
   gotoSignUp(){
     this.router.navigate(['sign-up'])
   }
-
-  gotoLogin(){
-    this.router.navigate(['sign-up'])
-  }
-
   onSubmit(){
     this.router.navigate(['home'])
   }
+
+  // gotoLogin(){
+  //   this.router.navigate(['sign-up'])
+  // }
+
+ 
 
 }

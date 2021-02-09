@@ -4,7 +4,7 @@
             <a><b>BDM</b>SYSTEM</a>
         </div>
         <!-- /.login-logo -->
-        <div class="card  card-outline card-danger">
+        <div class="card card-outline card-danger">
             <div class="card-body login-card-body ">
                 <p class="login-box-msg ">Sign in to start your session</p>
 
@@ -29,7 +29,7 @@
 
                         <!-- /.col -->
                         <div class="col-12 ">
-                            <button type="submit" class="btn btn-danger btn-block" (click)="onSubmit()">Sign In</button>
+                            <a><button class="btn btn-danger btn-block" (click)="onSubmit()">Sign In</button></a>
                         </div>
                         <!-- /.col -->
                     </div>
@@ -39,7 +39,7 @@
                     <a href="forgot-password.html ">I forgot my password</a>
                 </p>
                 <p class="mb-0 ">
-                    <a class="text-center " (click)=" gotoSignUp()">Register a new membership</a>
+                    <a class="text-center" (click)="gotoSignUp()">Register a new membership</a>
                 </p>
             </div>
             <!-- /.login-card-body -->

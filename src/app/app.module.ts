@@ -21,7 +21,6 @@ import { EditCampaignerComponent } from './components/blood-campaigner/edit-camp
   declarations: [
     AppComponent,
     HomeComponent,
-
     FooterComponent,
     NavBarComponent,
     SideBarComponent,

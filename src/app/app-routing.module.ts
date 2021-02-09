@@ -13,6 +13,7 @@ const routes: Routes = [
 {path:'login-user', component:LoginUserComponent},
 {path:'login-admin', component:LoginAdminComponent},
 {path:'sign-up', component:SignUpComponent},
+
 {path:'home', component:HomeComponent,
 
 children:[ 
@@ -50,7 +51,7 @@ children:[
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{useHash:true})],
 
 
 
